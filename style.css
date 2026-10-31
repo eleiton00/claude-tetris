@@ -16,7 +16,29 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.game-area {
   position: relative;
+}
+
+/* ---- Título ---- */
+.title {
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: 8px;
+  margin-right: -8px; /* compensa el espaciado tras la última letra */
+  line-height: 1;
+}
+
+.title span {
+  color: var(--c);
+  text-shadow: 0 0 14px color-mix(in srgb, var(--c) 45%, transparent);
 }
 
 .game-container {
